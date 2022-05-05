@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
   }
 
   getTrendingMovies(){
-    // this.http.get('Z:/ANOTHER/PORTFOLIO_PROJECTS/ANGULAR - FIRST PROJECT/movies-pet/src/assets/data/trending-movies.json')
-    // .subscribe((movies)=>{
-    //   this.trendingMovies = movies;
-    // console.log(this.trendingMovies)})
+    this.http.get('http://localhost:4200/assets/data/trending-movies.json')
+    .subscribe((movies)=>{
+      this.trendingMovies = movies;
+    console.log(this.trendingMovies)})
   }
 }
