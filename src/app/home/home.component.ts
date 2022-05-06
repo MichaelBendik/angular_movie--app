@@ -41,6 +41,6 @@ export class HomeComponent implements OnInit {
   }
 
   goToMovie(type:string, id:string){
-    this._router.navigate(['movie', type, id])
+    this._router.navigate(['movie', type, id]);
   }
 }
